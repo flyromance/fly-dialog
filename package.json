@@ -1,0 +1,32 @@
+{
+  "name": "art-dialog",
+  "version": "7.0.0",
+  "readmeFilename": "README.md",
+  "description": "A smart dialog box component",
+  "homepage": "https://github.com/aui/artDialog",
+  "scripts": {
+    "build": "rm -rf ./dist && webpack --config webpack.config-my.js -p",
+    "dev": "webpack -d",
+    "build-doc": "node doc/build/index.js"
+  },
+  "keywords": [
+    "dialog"
+  ],
+  "author": "aui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aui/artDialog.git"
+  },
+  "main": "./dist/dialog.js",
+  "devDependencies": {
+    "chalk": "^2.0.1",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "glob": "^7.1.2",
+    "html-webpack-plugin": "^2.30.1",
+    "markdown-it": "^8.3.1",
+    "style-loader": "^0.15.0",
+    "webpack": "^2.2.1"
+  },
+  "license": "LGPL-3.0"
+}
