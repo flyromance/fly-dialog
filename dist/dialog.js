@@ -1,2 +1,0 @@
-/*! this is my work. */
-!function(e,o){"object"==typeof exports&&"object"==typeof module?module.exports=o(require("window.jQuery")):"function"==typeof define&&define.amd?define(["window.jQuery"],o):"object"==typeof exports?exports.dialog=o(require("window.jQuery")):e.dialog=o(e["window.jQuery"])}(this,function(e){return webpackJsonp_name_([1],[function(o,n){o.exports=e}],[1])});
