@@ -3,7 +3,7 @@ require('./style/dialog.css');
 var $ = require('jquery');
 var Popup = require('./script/popup');
 var defaults = require('./script/config');
-console.log(123);
+
 var _count = 0;
 var _expando = new Date() - 0; // Date.now()
 var _isIE6 = !('minWidth' in $('html')[0].style);
@@ -118,7 +118,6 @@ artDialog.create = function(options) {
     if (options.zIndex) {
         Popup.zIndex = options.zIndex;
     }
-
 
     // 设置 ARIA 信息
     $popup.attr({
