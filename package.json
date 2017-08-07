@@ -5,8 +5,8 @@
   "description": "A smart dialog box component",
   "homepage": "https://github.com/aui/artDialog",
   "scripts": {
-    "build": "rm -rf ./dist && webpack --config webpack.config-my.js -p",
-    "dev": "webpack -d",
+    "build": "rm -rf ./dist && webpack --config webpack.config-my.js --optimize-minimize",
+    "dev": "rm -rf ./dist && webpack --config webpack.config-my.js --devtool eval-source-map --watch",
     "build-doc": "node doc/build/index.js"
   },
   "keywords": [

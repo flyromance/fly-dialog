@@ -6,8 +6,6 @@ function getEntry(dir) {
 	var files = glob.sync(dir);
 	var re = /.*\/([\w-.]+)\.js$/;
 
-	console.log(files);
-
 	files.forEach(function (file, index) {
 		var match = file.match(re);
 		if (match && match[1]) {

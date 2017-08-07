@@ -8,7 +8,7 @@ var mdi = new MarkdownIt({
 
 var pathDir = {
 	source: path.resolve(__dirname, '..', 'index.md'),
-	template: path.resolve(__dirname, '..', 'template/index.html'),
+	template: path.resolve(__dirname, '..', 'template/index-webpack.html'),
 	output: path.resolve(__dirname, '..', 'index.html')
 }
 
@@ -20,7 +20,7 @@ var template = fs.readFileSync(pathDir.template, 'utf8');
 var content = mdi.render(source);
 
 function transform(cont, option) {
-	return cont.replace(/\$\{([\w]+)\}/g, function ($0, $1) {
+	return cont.replace(/\{\%\s*([^\}\%\s]+)\s*\%\}/g, function ($0, $1) {
 		return option[$1];
 	})
 };

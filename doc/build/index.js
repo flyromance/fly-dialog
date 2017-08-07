@@ -11,7 +11,7 @@ const content = fs.readFileSync(source, 'utf8');
 const templateContent = fs.readFileSync(templateSource, 'utf8');
 
 const html = md.render(content);
-const template = (string, data) => string.replace(/\$\{([^\}]*?)\}/g, ($0, key) => String(data[key]));
+const template = (string, data) => string.replace(/\{\%\s*([^\}\%\s]+)\s*\%\}/g, ($0, key) => String(data[key]));
 const result = template(templateContent, {
     title: 'artDialog',
     content: html

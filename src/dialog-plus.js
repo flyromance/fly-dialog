@@ -1,6 +1,9 @@
+require('./style/dialog.css');
+
 var $ = require('jquery');
-var dialog = require('./dialog');
+var Popup = require('./script/popup');
 var drag = require('./script/drag');
+var defaults = require('./script/config');
 
 dialog.oncreate = function(api) {
 
